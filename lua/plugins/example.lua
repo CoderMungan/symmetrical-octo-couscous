@@ -149,6 +149,9 @@ return {
         "tsx",
         "typescript",
       })
+
+      vim.treesitter.language.register("html", "ejs")
+      vim.treesitter.language.register("javascript", "ejs")
     end,
   },
 
