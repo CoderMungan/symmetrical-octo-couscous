@@ -5,7 +5,9 @@ return {
     "hrsh7th/nvim-cmp",
   },
   config = function()
-    require("codeium").setup({})
+    require("codeium").setup({
+      debounce = 100,
+    })
     vim.g.codeium_enabled = true
   end,
 }
